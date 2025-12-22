@@ -13,6 +13,8 @@ import generatedQuestions from '../assets/genques.svg';
 import keyConcepts from '../assets/keyconcepts.svg';
 import addOnInfo from '../assets/addon.svg';
 import axios from "axios";
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = import.meta.env.VITE_URL;
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase";
 

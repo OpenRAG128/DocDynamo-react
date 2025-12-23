@@ -1,10 +1,13 @@
 import axios from "axios";
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = import.meta.env.VITE_URL;
+
 
 export default function WebSearchBox({ urls, setUrls, onProcessUrls , theme }) {
 
   const pdfUrls = async(urlsToSend)=>{
     try {
-      const res = await axios.post("https://doc-react-backend-cndfe0bqcbhbg9dc.centralindia-01.azurewebsites.net/process_urls",{urls : urlsToSend});
+      const res = await axios.post("/process_urls", { urls: urlsToSend });
       console.log(res.data);
     } catch (err) {
       console.error(err);

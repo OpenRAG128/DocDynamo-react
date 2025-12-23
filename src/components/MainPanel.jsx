@@ -370,7 +370,7 @@ export default function MainPanel({ theme, toggleTheme, uploadedFiles, filesProc
           DocDynamo
         </h1>
         <p className="mt-3 sm:mt-5 mb-4 sm:mb-8 text-base sm:text-lg font-heading font-semibold">
-          AI-Powered Document Intelligence
+          Contextual Intelligence Built on Trust
         </p>
       </div>
       {/* Query Result */}
